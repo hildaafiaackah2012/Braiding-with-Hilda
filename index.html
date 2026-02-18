@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Braiding with Hilda</title>
+  <meta name="description" content="Braiding with Hilda — Bookings, Gallery, Prices, Contact." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Braiding with Hilda Home">
+        <span class="brand-mark">BH</span>
+        <span class="brand-text">
+          <strong>Braiding with Hilda</strong>
+          <small>Pink • Gold • Gorgeous Braids</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#services">Services</a>
+        <a href="#prices">Prices</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Bookings</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <a class="btn btn-primary" href="#booking">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="pill">✨ Professional Braiding • Edmonton</p>
+        <h1>Beautiful braids, done with care.</h1>
+        <p class="lead">
+          Welcome to <strong>Braiding with Hilda</strong>. Book your appointment, explore the gallery,
+          and find the perfect style for your next look.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#booking">Book an Appointment</a>
+          <a class="btn btn-ghost" href="#gallery">View Gallery</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="badge-title">✅ Clean & Neat</span>
+            <span class="badge-sub">Quality finishing</span>
+          </div>
+          <div class="badge">
+            <span class="badge-title">⏱️ On Time</span>
+            <span class="badge-sub">Respecting your schedule</span>
+          </div>
+          <div class="badge">
+            <span class="badge-title">💖 Gentle Hands</span>
+            <span class="badge-sub">Comfort first</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <h2>Quick Booking</h2>
+          <p class="muted">Pick a service and send your request.</p>
+
+          <form id="quickBookingForm" class="form" autocomplete="on">
+            <label>
+              Full Name
+              <input required name="name" placeholder="Your name" />
+            </label>
+
+            <label>
+              Phone / WhatsApp
+              <input required name="phone" placeholder="e.g., (780) 000-0000" />
+            </label>
+
+            <label>
+              Service
+              <select required name="service">
+                <option value="">Select a service</option>
+                <option>Knotless Braids</option>
+                <option>Box Braids</option>
+                <option>Stitch Cornrows</option>
+                <option>Soft Locs</option>
+                <option>Twists</option>
+                <option>Kids Braids</option>
+                <option>Other (describe)</option>
+              </select>
+            </label>
+
+            <label>
+              Preferred Date
+              <input required name="date" type="date" />
+            </label>
+
+            <label>
+              Notes (length, color, hair provided?)
+              <textarea name="notes" rows="3" placeholder="Optional details"></textarea>
+            </label>
+
+            <button class="btn btn-primary w-100" type="submit">Send Booking Request</button>
+            <p class="tiny muted">
+              This opens your email app with the booking message. (No server needed.)
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p class="muted">Popular styles — ask for custom looks too.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Knotless Braids</h3>
+          <p>Lightweight, natural look, comfortable install.</p>
+        </article>
+        <article class="card">
+          <h3>Box Braids</h3>
+          <p>Classic, versatile, and perfect for protective styling.</p>
+        </article>
+        <article class="card">
+          <h3>Stitch Cornrows</h3>
+          <p>Clean lines, sharp parts, beautiful patterns.</p>
+        </article>
+        <article class="card">
+          <h3>Soft Locs / Twists</h3>
+          <p>Trendy and elegant — great for all occasions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prices -->
+  <section id="prices" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Prices</h2>
+        <p class="muted">Starting prices (final price depends on length, size, and hair type).</p>
+      </div>
+
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Knotless Braids</h3>
+          <ul>
+            <li><span>Small</span><strong>$180+</strong></li>
+            <li><span>Medium</span><strong>$150+</strong></li>
+            <li><span>Large</span><strong>$120+</strong></li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Box Braids</h3>
+          <ul>
+            <li><span>Small</span><strong>$170+</strong></li>
+            <li><span>Medium</span><strong>$140+</strong></li>
+            <li><span>Large</span><strong>$110+</strong></li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Stitch Cornrows</h3>
+          <ul>
+            <li><span>2–4 lines</span><strong>$60+</strong></li>
+            <li><span>6–8 lines</span><strong>$90+</strong></li>
+            <li><span>Designs</span><strong>$110+</strong></li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Kids Styles</h3>
+          <ul>
+            <li><span>Simple braids</span><strong>$50+</strong></li>
+            <li><span>Beads / designs</span><strong>$70+</strong></li>
+            <li><span>Natural hair care</span><strong>$40+</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice">
+        <strong>Tip:</strong> For the best results, arrive with clean, detangled hair.
+        Hair can be provided — mention it in your booking notes.
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Hair Gallery</h2>
+        <p class="muted">Replace these images with your real work (instructions below).</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot"><img src="assets/gallery-1.jpg" alt="Braids style 1" loading="lazy"></figure>
+        <figure class="shot"><img src="assets/gallery-2.jpg" alt="Braids style 2" loading="lazy"></figure>
+        <figure class="shot"><img src="assets/gallery-3.jpg" alt="Braids style 3" loading="lazy"></figure>
+        <figure class="shot"><img src="assets/gallery-4.jpg" alt="Braids style 4" loading="lazy"></figure>
+        <figure class="shot"><img src="assets/gallery-5.jpg" alt="Braids style 5" loading="lazy"></figure>
+        <figure class="shot"><img src="assets/gallery-6.jpg" alt="Braids style 6" loading="lazy"></figure>
+      </div>
+
+      <p class="tiny muted">
+        Put your photos in <code>/assets</code> and keep the same names (gallery-1.jpg … gallery-6.jpg),
+        or update the image filenames here.
+      </p>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Bookings</h2>
+        <p class="muted">Fill the form and send your request. I’ll confirm your time.</p>
+      </div>
+
+      <div class="booking-grid">
+        <div class="booking-info">
+          <h3>Booking Rules</h3>
+          <ul class="checklist">
+            <li>Deposit may be required to secure your slot.</li>
+            <li>Please arrive on time (late arrivals may be rescheduled).</li>
+            <li>Tell me your preferred length, size, and color.</li>
+            <li>For special requests, attach a reference photo (in email).</li>
+          </ul>
+
+          <div class="contact-chips">
+            <a class="chip" href="#contact">📍 Location</a>
+            <a class="chip" href="#contact">📞 Call / Text</a>
+            <a class="chip" href="#contact">📧 Email</a>
+          </div>
+        </div>
+
+        <form id="bookingForm" class="form cardish">
+          <div class="grid-2">
+            <label>
+              Full Name
+              <input required name="name" placeholder="Your name" />
+            </label>
+
+            <label>
+              Phone
+              <input required name="phone" placeholder="(780) 000-0000" />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Email
+              <input required name="email" type="email" placeholder="you@example.com" />
+            </label>
+
+            <label>
+              Service
+              <select required name="service">
+                <option value="">Select</option>
+                <option>Knotless Braids</option>
+                <option>Box Braids</option>
+                <option>Stitch Cornrows</option>
+                <option>Soft Locs</option>
+                <option>Twists</option>
+                <option>Kids Braids</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Preferred Date
+              <input required name="date" type="date" />
+            </label>
+
+            <label>
+              Preferred Time
+              <input required name="time" type="time" />
+            </label>
+          </div>
+
+          <label>
+            Notes (size, length, hair provided, color, etc.)
+            <textarea name="notes" rows="4" placeholder="Example: medium knotless, waist length, color 1B, hair needed"></textarea>
+          </label>
+
+          <button class="btn btn-primary w-100" type="submit">Send Booking Request</button>
+
+          <p class="tiny muted">
+            This sends via email (mailto). Want a “real” form that saves bookings automatically?
+            You can connect Formspree later (free).
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Update the details below with your real info.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="cardish">
+          <h3>Reach Me</h3>
+          <p><strong>Phone:</strong> <a href="tel:+17800000000">(780) 000-0000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:braidingwithhilda@gmail.com">braidingwithhilda@gmail.com</a></p>
+          <p><strong>Instagram:</strong> <a href="#" target="_blank" rel="noreferrer">@braidingwithhilda</a></p>
+          <p><strong>Location:</strong> Edmonton, AB</p>
+
+          <div class="contact-actions">
+            <a class="btn btn-ghost" href="mailto:braidingwithhilda@gmail.com?subject=Braiding%20with%20Hilda%20-%20Inquiry">Email Me</a>
+            <a class="btn btn-primary" href="#booking">Book Now</a>
+          </div>
+        </div>
+
+        <div class="cardish">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Mon</span><strong>10am – 6pm</strong></li>
+            <li><span>Tue</span><strong>10am – 6pm</strong></li>
+            <li><span>Wed</span><strong>10am – 6pm</strong></li>
+            <li><span>Thu</span><strong>10am – 6pm</strong></li>
+            <li><span>Fri</span><strong>10am – 6pm</strong></li>
+            <li><span>Sat</span><strong>10am – 5pm</strong></li>
+            <li><span>Sun</span><strong>Closed</strong></li>
+          </ul>
+          <p class="tiny muted">You can change these anytime in the HTML.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Braiding with Hilda. All rights reserved.</p>
+      <p class="tiny muted">Made with 💖 in pink & gold.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
