@@ -26,12 +26,13 @@ body{
   line-height:1.5;
 
   background:
-    linear-gradient(rgba(255,192,203,0.18), rgba(255,215,0,0.10)),
-    url("assets/marble-bg.jpeg");
+  linear-gradient(rgba(255,182,193,0.15), rgba(255,215,0,0.08)),
+  url("./assets/marble-bg.jpeg");
 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
