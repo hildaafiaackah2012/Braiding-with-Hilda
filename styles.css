@@ -44,7 +44,9 @@ background-attachment: fixed;
   position:sticky;
   top:0;
   z-index:50;
-  background:rgba(255,255,255,0.72);
+  background:.card, .price-card, .badge, .policy{
+  background: var(--card);
+}
   backdrop-filter:blur(12px);
   border-bottom:1px solid rgba(0,0,0,0.08);
 }
@@ -146,7 +148,9 @@ background-attachment: fixed;
   display:inline-flex;
   padding:7px 12px;
   border-radius:999px;
-  background:rgba(255,255,255,0.75);
+  background:.card, .price-card, .badge, .policy{
+  background: var(--card);
+}
   border:1px solid rgba(0,0,0,0.08);
   color:rgba(26,15,20,0.75);
   margin:0 0 14px 0;
@@ -281,7 +285,9 @@ h1{
   padding:12px 12px;
   border-radius:14px;
   border:1px solid rgba(0,0,0,0.12);
-  background:rgba(255,255,255,0.85);
+  background:.card, .price-card, .badge, .policy{
+  background: var(--card);
+}
   color:#1a0f14;
   outline:none;
 }
@@ -298,7 +304,9 @@ h1{
   padding:8px 10px;
   border-radius:999px;
   border:1px solid rgba(0,0,0,0.10);
-  background:rgba(255,255,255,0.75);
+  background:.card, .price-card, .badge, .policy{
+  background: var(--card);
+}
   color:rgba(26,15,20,0.75);
   font-weight:700;
 }
@@ -309,7 +317,8 @@ h1{
 .footer{
   border-top:1px solid rgba(0,0,0,0.08);
   padding:22px 0;
-  background:rgba(255,255,255,0.70);
+  background:.card, .price-card, .badge, .policy{
+  background: var(--card);
 }
 
 .footer-inner{
@@ -343,9 +352,10 @@ h1{
     padding:12px;
     border-radius:18px;
     border:1px solid rgba(0,0,0,0.10);
-    background:rgba(255,255,255,0.90);
+    background:.card, .price-card, .badge, .policy{
+  background: var(--card);
+}
     box-shadow:var(--shadow);
-  }
   .nav.open{display:flex;}
   .grid-2{grid-template-columns:1fr;}
   .hero-badges{grid-template-columns:1fr;}
